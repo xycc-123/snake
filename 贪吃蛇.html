@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇</title>
+    <link rel="stylesheet" href="./snake.css">
+    <script src="./snake.js" defer></script>
+</head>
+
+<body>
+    <!-- 游戏边框 -->
+    <div id="main">
+        <!-- 上边框 -->
+        <div id="stage">
+            <!-- 🐍 -->
+            <div id="snake">
+                <!-- 从一个开始 -->
+                <div></div>
+            </div>
+
+            <!-- 食物 -->
+            <div id="food">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <!-- 信息栏 -->
+        <div id="info">
+            <div>SCORE:<span id="score">0</span></div>
+            <div>LEVEL:<span id="level">1</span></div>
+        </div>
+    </div>
+</body>
+
+</html>

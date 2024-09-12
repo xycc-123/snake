@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* 设置 box-sizing: border-box;后，元素的总宽度和高度将包括内容、内边距和边框，但不会包括外边距（margin）*/
+    box-sizing: border-box;
+}
+
+#main{
+    height: 420px;
+    width: 360px;
+    border: 10px #000 solid;
+    background-color: #a0cdaa;
+    border-radius: 20px;
+    margin: 50px auto;
+}
+
+#stage{
+    width: 304px;
+    height: 304px;
+    border: 2px #000 solid;
+    margin: 20px auto;
+    /* background-color: #62d2cd; */
+    position: relative;
+}
+
+#snake > div{
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    border:1px #a0cdaa solid;
+}
+
+#food{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    /* 允许换行显示 */
+    display: flex;
+    flex-flow: wrap;
+}
+
+/* 设置食物花样 */
+#food > div{
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+#info{
+    width: 304px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    font: bold 20px courier;
+}
